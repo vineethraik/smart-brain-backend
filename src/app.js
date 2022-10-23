@@ -129,6 +129,8 @@ const db = knex({
     }
 });
 
+console.log(process.env);
+
 
 const app = Express();
 
