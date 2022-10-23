@@ -129,7 +129,11 @@ const db = knex({
     }
 });
 
-console.log(process.env);
+console.log(process.env.smartbrain_db_link,
+    process.env.smartbrain_db_port,
+    process.env.smartbrain_db_user,
+    process.env.smartbrain_db_password
+    );
 
 
 const app = Express();
