@@ -155,8 +155,9 @@ app.post('/leaderboard', handleGetLeaderBoard(db));
 
 //app.get('/test', handleTestCookie);
 
+if(process.env.production === undefined){
 
-
-app.listen(3000);
+    app.listen(3000);
+}
 
 export default app;
