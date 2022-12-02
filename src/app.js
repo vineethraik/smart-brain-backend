@@ -90,6 +90,12 @@
  * 
  */
 
+/**
+ * development env variables
+ * C:\workflow\entry\projectscipts\testenvnomail.ps1
+ * C:\workflow\entry\projectscipts\testenvwithmail.ps1
+ */
+
 // export const mainUrl="http://localhost:3000";
 let tempUrl;
 if (process.env.smartbrain_mainUrl !== undefined) {
@@ -131,8 +137,7 @@ const db = knex({
 
 console.log(process.env.smartbrain_db_link,
     process.env.smartbrain_db_port,
-    process.env.smartbrain_db_user,
-    process.env.smartbrain_db_password
+    process.env.smartbrain_db_user
     );
 
 
